@@ -1,0 +1,26 @@
+@media screen and (max-width:1140px) {
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+    .main_bnr {
+        flex-direction: column;
+        gap: 41px;
+        padding: 40px 30px;
+    }
+    .over-view{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+

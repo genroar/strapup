@@ -1,14 +1,12 @@
-import React, { useState } from "react";
-import ButtonCross from "../atoms/ButtonCross";
-import ModelCondition from "./account/ModelCondition";
-import ModelYear from "./account/ModelYear";
+import { useState } from "react";
 import Modelprice from "./Modelprice";
 import Modelsignup from "./Modelsignup";
 import Modelwatch from "./Modelwatch";
 import Photo from "./Photo";
-import ProgressBar from "./ProgressBar";
 import Submitment from "./Submitment";
 import WatchBrand from "./WatchBrand";
+import ModelCondition from "./account/ModelCondition";
+import ModelYear from "./account/ModelYear";
 
 function HomeConsign({consignShadow}) {
   const [selectedBrand, setSelectedBrand] = useState(null);

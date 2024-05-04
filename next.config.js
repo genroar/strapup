@@ -1,4 +1,3 @@
-// next.config.js
 module.exports = {
   webpack: (config, { dev, isServer }) => {
     // Add PostCSS support
@@ -10,7 +9,6 @@ module.exports = {
         },
       },
     };
-
 
     // Apply PostCSS loader only for client-side CSS
     if (!isServer) {

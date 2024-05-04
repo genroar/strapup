@@ -1,7 +1,5 @@
-import React from 'react'
-import Heading from '../atoms/Heading'
-import Other from '../atoms/Other'
-import { RxCross1 } from "react-icons/rx";
+import Heading from '../atoms/Heading';
+import Other from '../atoms/Other';
 
 function Modelcountry({onSelcetCountry}) {
   const handleCountrySelect = (Country) => {

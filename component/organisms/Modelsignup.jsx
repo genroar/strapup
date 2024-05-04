@@ -1,9 +1,5 @@
-import React from "react";
-import Heading from "../atoms/Heading";
-import Input from "../atoms/Input";
 import Button from "../atoms/Button";
-import { RxCross1 } from "react-icons/rx";
-import ButtonCross from "../atoms/ButtonCross";
+import Heading from "../atoms/Heading";
 
 function Modelsignup({ onSelectSign , sub }) {
   const handleSignSelect = (signup) => {

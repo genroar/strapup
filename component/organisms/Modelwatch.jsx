@@ -5,17 +5,18 @@ import Modelhead from "../atoms/Modelhead";
 import { LiaLessThanSolid } from "react-icons/lia";
 import Other from "../atoms/Other";
 import ButtonCross from "../atoms/ButtonCross";
+
 function Modelwatch({ onSelectModel, onSelectType }) {
   const handlModelSelelct = (Model) => {
     onSelectModel(Model);
   };
 
   return (
-    <div className="flex   items-center justify-center">
-      <div className="flex flex-col ">
-        <div className="flex flex-col items-center justify-center">
-          <div className="w-[730px]  flex flex-col gap-[20px]">
-            <div className="flex items-center justify-center ">
+    <div className="flex w-[100%] items-center justify-center">
+      <div className="">
+        <div className="">
+          <div className="flex xl:w-[700px] lg:w-[700px] md:w-[100%] flex-col gap-[20px]">
+            <div className=" ">
               <Modelhead
                 icon={<LiaLessThanSolid  /> }
                 onclick = {onSelectType}
@@ -24,7 +25,7 @@ function Modelwatch({ onSelectModel, onSelectType }) {
                 subDescription="Find or select an option below"
               />
             </div>
-            <div className="w-[730px] flex flex-wrap gap-[10px]">
+            <div className="  grid grid-cols-2 gap-[10px]">
               <button onClick={() => handlModelSelelct("Model1")}>
                 <WatchModel text="Model 1" />
               </button>
@@ -57,7 +58,7 @@ function Modelwatch({ onSelectModel, onSelectType }) {
                 <WatchModel text="Model 8" />
               </button>
             </div>
-            <div className="flex justify-center items-center w-[73[]0px]">
+            <div className="flex justify-center items-center">
               <Other child="Other" parent="Other" />
             </div>
           </div>

@@ -6,6 +6,7 @@ import Navigation from "../molecules/Navigation";
 import HeaderRight from "../molecules/HeaderRight";
 import SignUpmol from "../molecules/SignUpmol";
 import Link from "next/link";
+import Container from "../atoms/Container";
 
 function Header() {
   const router = useRouter();
@@ -13,23 +14,25 @@ function Header() {
   return (
     <div className="w-full header">
       <div className="header">
-        <div className="flex container w-full py-[15px] items-center h-[65px] justify-between">
-          <div>
-            <Link href="/">
-              <CustomImage
-                variant="logo"
-                src="/assits/assits/image/header-logo.png"
-                alt="logo"
-              />
-            </Link>
+        <Container>
+          <div className="flex w-full py-[15px] items-center justify-between">
+            <div>
+              <Link href="/">
+                <CustomImage
+                  variant="logo"
+                  src="/assits/assits/image/header-logo.png"
+                  alt="logo"
+                />
+              </Link>
+            </div>
+            <div>
+              <Navigation />
+            </div>
+            <div>
+              <HeaderRight />
+            </div>
           </div>
-          <div>
-            <Navigation />
-          </div>
-          <div>
-            <HeaderRight />
-          </div>
-        </div>
+        </Container>
         {/* {activeTab === "login" && <SignUpmol />} */}
       </div>
     </div>

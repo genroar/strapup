@@ -1,32 +1,35 @@
 import FAQ from "../organisms/FAQ";
-import AboutUs from "../organisms/AboutUs";
+import AboutUs from "../organisms/About-Us";
 import Footer2 from "../organisms/Footer2";
 import Header2 from "../organisms/Header2";
 import HowWorks from "../organisms/HowWorks";
-import Banner from "@/component/organisms/Banner";
-import Listing from "@/component/organisms/Listing";
+import Container from "../atoms/Container";
+import Banner from "../organisms/Banner";
+import Listing from "../organisms/Listing";
 
 function Home() {
   return (
-    <div>
-      <Header2 />
-      <div className="">
+    <div className="">
+      <Container>
         <div>
           <Banner />
-          <div className="px-[80px] flex items-center justify-center">
+          <div className="xl:px-[40px] lg:px-[40px] md:px-[20px] px-[0px] items-center justify-center">
             <Listing />
           </div>
           <div>
             <div></div>
           </div>
         </div>
-        <div className="mt-[50px]">
-        <HowWorks/>
-        </div>
-        <AboutUs/>
-        <FAQ/>
+      </Container>
+      <div className="mt-[50px]">
+        <HowWorks />
       </div>
-      <Footer2/>
+      <Container>
+        <div className="">
+          <AboutUs />
+        </div>
+        <FAQ />
+      </Container>
     </div>
   );
 }
